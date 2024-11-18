@@ -1,0 +1,40 @@
+/* Importando arquivos de estilos específicos */
+@import url('./assets/css/header.css');
+@import url('./assets/css/video.css');
+@import url('./assets/css/anime-character.css');
+@import url('./assets/css/footer.css');
+@import url('./assets/css/faq.css');
+
+/* Definindo variáveis de cores para facilitar a manutenção */
+:root {
+    --primary-color: #4facfe;
+    --secondary-color: #00f2fe;
+    --background-color: #222;
+    --text-color: #333;
+    --link-color: #007BFF;
+    --link-hover-color: #0056b3;
+    --white-color: #fff;
+}
+
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corpo */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+    color: var(--text-color);
+    padding-top: 60px; /* Espaço para o cabeçalho fixo */
+}
+
+/* Seções */
+section {
+    padding: 40px 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}

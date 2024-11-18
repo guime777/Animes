@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anime World</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <!-- Seção de Cabeçalho -->
+    <header id="header">
+        <nav>
+            <ul>
+                <li><a href="#section1">Anime Favoritos</a></li>
+                <li><a href="#section2">Personagens</a></li>
+                <li><a href="#section3">Trailer</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="section1">
+        <h2>Anime Favoritos</h2>
+        <div class="anime-list">
+            <article>
+                <h3>Attack on Titan</h3>
+                <img src="./assets/img/Attack_on_Titan_Season_1.webp" alt="Attack on Titan">
+                <p>Quando os humanos são quase extintos por gigantes devoradores de homens, Eren Yeager, um jovem, se junta à luta para salvar a humanidade.</p>
+                <a href="https://www.crunchyroll.com/attack-on-titan" target="_blank">Assistir no Crunchyroll</a>
+            </article>
+            <article>
+                <h3>Demon Slayer</h3>
+                <img src="./assets/img/demon_slayer.webp" alt="Demon Slayer">
+                <p>Tanjirou Kamado se torna um caçador de demônios após sua família ser assassinada por esses seres malignos. Uma história de luta e superação.</p>
+                <a href="https://www.crunchyroll.com/demon-slayer" target="_blank">Assistir no Crunchyroll</a>
+            </article>
+            <article>
+                <h3>My Hero Academia</h3>
+                <img src="./assets/img/my_hero_academia.jpg" alt="My Hero Academia">
+                <p>Em um mundo onde quase todos têm superpoderes, Izuku Midoriya, um garoto sem poderes, sonha em se tornar um herói.</p>
+                <a href="https://www.crunchyroll.com/my-hero-academia" target="_blank">Assistir no Crunchyroll</a>
+            </article>
+        </div>
+    </section>
+    
+    <section id="section2">
+        <h2>Personagens Incríveis</h2>
+        <div class="character-list">
+            <article>
+                <h3>Eren Yeager</h3>
+                <img src="./assets/img/eren.jpg" alt="Eren Yeager">
+                <p>Eren Yeager é o protagonista de "Attack on Titan", determinado a destruir todos os titãs que ameaçam a humanidade.</p>
+            </article>
+            <article>
+                <h3>Tanjirou Kamado</h3>
+                <img src="./assets/img/Tanjirou Kamado.jpg" alt="Tanjirou Kamado">
+                <p>Tanjirou é o protagonista de "Demon Slayer", conhecido por sua força de vontade inabalável e por seu desejo de salvar sua irmã Nezuko.</p>
+            </article>
+            <article>
+                <h3>Izuku Midoriya</h3>
+                <img src="./assets/img/Izuku Midoriya.webp" alt="Izuku Midoriya">
+                <p>Izuku é o herói sem poderes de "My Hero Academia", mas com um grande coração e desejo de se tornar um grande herói como seu ídolo All Might.</p>
+            </article>
+        </div>
+    </section>
+
+    <section id="section3">
+        <h2>Trailer do Anime</h2>
+        <p>Assista ao trailer do anime mais popular da temporada!</p>
+        <div class="video-container">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/6P79AqWs8V8?si=xDj2LDYi6pd4knjB&amp;start=6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+    </section>
+
+    <section id="section4">
+        <h2>FAQ - Perguntas Frequentes</h2>
+        <div class="faq-item">
+            <button class="faq-question">O que é Anime World?</button>
+            <div class="faq-answer">
+                <p>Anime World é um site dedicado a animes, com informações sobre seus personagens, trailers e muito mais.</p>
+            </div>
+        </div>
+        <div class="faq-item">
+            <button class="faq-question">Como posso entrar em contato?</button>
+            <div class="faq-answer">
+                <p>Você pode entrar em contato através da nossa seção de contatos ou nos links de redes sociais no rodapé.</p>
+            </div>
+        </div>
+        <div class="faq-item">
+            <button class="faq-question">O site é responsivo?</button>
+            <div class="faq-answer">
+                <p>Sim! O site se adapta a dispositivos móveis e tablets.</p>
+            </div>
+        </div>
+        <!-- Adicione mais perguntas e respostas aqui -->
+    </section>
+    
+
+    <footer id="footer">
+        <p>&copy; 2024 Anime World. Todos os direitos reservados.</p>
+    </footer>
+
+
+
+
+    <script>
+        // Seleciona todos os botões de perguntas
+        const faqButtons = document.querySelectorAll('.faq-question');
+    
+        // Adiciona um evento de clique para cada botão
+        faqButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                // Alterna a visibilidade da resposta
+                const answer = button.nextElementSibling;
+                answer.style.display = (answer.style.display === 'block') ? 'none' : 'block';
+            });
+        });
+    </script>
+    
+</body>
+</html>

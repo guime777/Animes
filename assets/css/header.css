@@ -1,0 +1,28 @@
+/* Cabeçalho */
+#header {
+    background-color: var(--background-color);
+    padding: 10px 0;
+    position: fixed; /* Cabeçalho fixo */
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+/* Navegação */
+#header nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+#header nav ul li {
+    margin: 0 15px;
+}
+
+#header nav ul li a {
+    color: var(--white-color);
+    text-decoration: none;
+    font-size: 1em;
+    text-align: center;
+}

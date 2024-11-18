@@ -1,0 +1,41 @@
+/* Anime e Personagens */
+.anime-list, .character-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.anime-list article, .character-list article {
+    background-color: var(--white-color);
+    padding: 15px;
+    border-radius: 12px;
+    width: 260px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.anime-list article:hover, .character-list article:hover {
+    transform: translateY(-10px);
+}
+
+.anime-list img, .character-list img {
+    max-width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+/* Links de artigos */
+.anime-list article a, .character-list article a {
+    color: var(--link-color);
+    text-decoration: none;
+    font-weight: bold;
+    display: block;
+    margin-top: 10px;
+    transition: color 0.3s ease;
+}
+
+.anime-list article a:hover, .character-list article a:hover {
+    color: var(--link-hover-color);
+}
